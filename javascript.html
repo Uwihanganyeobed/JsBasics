@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Welcome to Javascript</h2>
+
+    <script>
+        //javascript code goes here
+        // alert("Hello World");
+        console.log("Hello Again")
+        document.write("Welcome Again");
+
+        //variables
+        var name="Kalisa";
+        document.write(name);
+        //ES6
+        let age=60;
+        age=80;
+        document.write(age);
+        const country="Rwanda";
+        // country="Uganda";
+        document.write(country);
+        
+        //data types
+        let  myAge='Hello';
+        myAge={};
+        document.write(typeof myAge); 
+        
+        //datatypes
+        /*1. Numbers
+        2. Strings
+        3. Booleans
+        4. Null
+        //composite data types
+        1. Arrays
+        2. Objects
+        3. Functions,...
+*/
+
+            //condidtional statements
+            //IF 
+            //a program to check if the user marks =100 & then Pass
+            let userMarks =''
+            if(userMarks){
+                document.write('<br> Pass')
+            }   
+            else{
+                document.write('<br> Fail')
+            }
+
+            //operators
+            let x = 10;
+            let y=20;
+            x=y;
+            document.write('<br> x: ' + x);//x=
+            document.write('<br> y: ' + y);
+
+            //% modulus operator
+            let z = 1 % 3;
+            document.write('<br> z: ' + z);//
+
+            //input function
+            let userInput = prompt("Enter your name");
+            document.write('<br> Hello ' + userInput);
+
+        let operator = prompt("Enter an operator")
+        let number1 = parseFloat(prompt("Enter first number"));
+        let number2 = parseFloat(prompt("Enter second number"));
+
+        if(operator == '+'){
+            document.write('Result is ' + (number1 + number2));
+        }
+         else if(operator == '-'){
+            document.write('Result is ' + (number1 - number2));
+        }
+          if(operator == '*'){
+            document.write('Result is ' + (number1 * number2));
+        }
+          else if(operator == '/'){
+            document.write('Result is ' + (number1 / number2));
+        }
+        else if(operator == '%'){
+            document.write('Result is ' + (number1 % number2));
+        }
+        else{
+            document.write('Invalid operator');
+        }
+
+       
+
+            //Peerfrom a simple calculator using nested if 
+            //statement to perform addition, subtraction,
+            //  multiplication and division and modulus of 2 numbers
+            //with an operator choosen by user
+
+             //conditional operator
+        let newAge =60;
+        newAge >= 18 ? document.write('<br> Adult') 
+        : document.write('<br> Child');
+        //
+        newAge >18 && document.write(' Yeah');
+        newAge <18 || document.write('<br> Yep');
+
+      
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navbar{
+  background-color: green;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.navbar a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.list{
+  background-color: orange;
+  padding: 20px;
+}
+
+.p{
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+.comment-card{
+  background-color: grey;
+  width: 200px;
+  padding: 17px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-header{
+  display: flex;
+  justify-content: space-between;
+}
+.email{
+  color: #1e5adb;
+  margin: 8px 0;
+}
+.comment-body{
+  font-size: 20px;
+  font-weight: bold;
+}

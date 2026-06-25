@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+              //Loops
+        //repeating codes for a certain number of times
+        //for...loop
+        //we want to display numbers from 1 to 10
+        for(let counter =1; counter<=10;counter=counter+1){
+            document.write(counter + '<br>');
+        }
+        //task2: display odd numbers from 1 to 20
+        for(let i=1; i<=20; i+=2){
+            document.write(i + '<br>');
+        }
+        //while...loop //condition is checked 
+        // before executing the code
+        let count=1;
+        while(count<=10){
+            document.write(count + '<br>');
+            count+=2;
+        }
+
+        //do...while...loop
+        //condition is checked after
+        //  executing the code
+        let myNum=1;
+        do{
+            document.write(myNum + '<br>');
+            myNum+=2;
+        } while(myNum<=10);
+        //task3. use any Loop to find sum and average of numbers
+        //between 1 an 100
+
+        let sum=0;
+        let average=0;
+        for(let index=1; index<=100; index++){
+            sum=sum+index;
+        }
+        average= sum/100;
+        document.write('The sum is: ' + sum + '<br>');
+        document.write('The average is: ' + average);
+
+       
+
+    </script>
+</body>
+</html>

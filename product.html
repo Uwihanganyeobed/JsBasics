@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        document.body.style.backgroundColor='green';
+        document.body.style.color='white';
+
+        //Containers [Arrays// Objects//JSON//Functions]
+        //Arrays holds multiple values in a single variable
+        const numbers =[1,2,3,4,5];
+        document.write(numbers+'<br>');
+        document.write(numbers.length +'<br>');
+
+        //to access an array element 
+        // we use its index =0
+        document.write(numbers[2] +'<br>'); //1
+
+        //numbers[counter]
+        //map() function
+        
+        numbers.map(function(num){
+            document.write(num + '<br>');
+        });
+        //filter//delete
+        numbers.filter(function(num){
+            if(num%2==0){
+                document.write(num + '<br>');
+            }
+        }
+        )
+
+
+        //find an element in an array
+        numbers.find(function(num){
+            if(num==3){
+                document.write(num + '<br>');
+            }
+        })
+
+        //for each
+        numbers.forEach(function(x){
+            document.write(x + '<br>');
+        })
+        
+        //Obects hold data in key-value pairs
+        const person={
+            personId: 101,
+            userName: 'Kalisa',
+            usrAge: 60,
+            country: 'Rwanda',
+            hasPromotion: false,
+            courseMarks : [{csc: 80}, {chemistry: 90}, {js: 100}]
+        }
+        //accessing values in object
+        document.write(person.courseMarks[2].js + '<br>');  
+        //JSON is a format for storing and transporting data//array of objects
+        const student =[
+            {
+                "studentId": 102,
+                "password": '12345',
+                "studentName": 'John',
+            },
+            {
+                "studentId": 103,
+                "password": '54321',
+                "studentName"  : 'Jane',
+            }
+        ]
+        // document.write(student[1].studentName + '<br>');
+        //Functions are reusable blocks of code that perform a specific task
+
+        //
+        student.length==0 && document.write('No student found');
+        student.length>0 &&
+            student.map(function(std){
+                document.write(std.studentId + ' ');
+                document.write(std.studentName + ' ');
+                document.write(std.password + ' <br>');
+            })
+
+
+            //functions
+            function hello(){
+                document.write('Hi')
+            }
+            hello();
+
+            //function with parameters
+            function addNumbers(num1,num2){
+                let sum=num1+num2;
+                document.write('The sum is: ' + sum);
+            }
+            addNumbers(5, 10);
+            //arrow functions ES6
+            const addnumber =(num1,num2)=>{
+                let sum=num1+num2;
+                document.write('The sum is: ' + sum);
+            }
+            addnumber(5, 10);
+
+            const sum=(x,y)=> x+y;
+            document.write('<br> The sum is: ' + sum(5,10));
+
+            //DOM manipulation
+    </script>
+</body>
+</html>
